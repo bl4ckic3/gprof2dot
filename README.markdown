@@ -96,6 +96,14 @@ This is the result from the [example data](http://linuxgazette.net/100/misc/vina
 
 ## Examples
 
+### valgrind 
+ 16101 here is the output from valgrind
+
+    $./gprof2dot.py --format=callgrind --output=out.dot /tmp/callgrind.out.16101
+    $dot -Tpng out.dot -o graph.png
+
+
+
 ### Linux perf
 
     perf record -g -- /path/to/your/executable
